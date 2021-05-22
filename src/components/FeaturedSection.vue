@@ -1,7 +1,7 @@
 <template>
   <div class="featuredSection container">
     <b-row >
-      <b-col cols="8">
+      <b-col cols="12" md="8">
         <b-img
           :src="RandomItem.thumbnail"
           fluid
@@ -10,7 +10,7 @@
         ></b-img>
       </b-col>
 
-      <b-col cols="4">
+      <b-col cols="12" md="4">
         <b-card-body>
           <b-card-title>
             {{ RandomItem.title }}

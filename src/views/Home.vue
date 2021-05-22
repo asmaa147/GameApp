@@ -40,10 +40,10 @@ export default {
   },
   filters: {
     firstItems: function (v) {
-      return v.slice(0, 5);
+      return v.slice(0, 4);
     },
     lastItems: function (v) {
-      return v.slice(5, 10);
+      return v.slice(5, 9);
     },
     randomItem: function (v) {
       return v[Math.floor(Math.random() * v.length)];

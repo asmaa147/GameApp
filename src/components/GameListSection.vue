@@ -1,20 +1,20 @@
 <template>
   <b-container class="GameList">
     <b-row align-h="between" align-v="center">
-      <b-col cols="10">
+      <b-col cols="8" md="10">
         <h3 class="SectionTitle">{{ SectionTitle }}</h3>
       </b-col>
       <b-col>
-        <span cols="2">
+        <span cols="4" md="2">
           SEE ALL
           <img src="../assets/arrow-right-short.svg" class="seeAllIcon" />
         </span>
       </b-col>
     </b-row>
 
-    <b-row cols="5" >
-      <b-col v-for="post in posts" :key="post.id">
-        <b-card style="" class="mb-2">
+    <b-row >
+      <b-col cols="12" md="4" lg="3" v-for="post in posts" :key="post.id">
+        <b-card  class="mb-2">
 
           <router-link :to="'/DetailsPage/' + post.id">
             <b-card-img :src="post.thumbnail" :img-alt="post.title" img-top />

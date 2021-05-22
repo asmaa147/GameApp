@@ -5,7 +5,7 @@
         <img
           :src="selectedItem.thumbnail"
           :alt="selectedItem.title"
-          style="height: 17em"
+          style="height: 20em"
         />
       </div>
 
@@ -68,7 +68,8 @@ export default {
       }
     )
       .then((response) => response.json())
-      .then((data) =>  {this.posts = data ; this.selectedItem = data[this.$route.params.id - 1]})
+      .then((data) =>  {this.posts = data ;
+             this.selectedItem = data[this.$route.params.id - 1]})
       .catch((err) => {
         console.error(err);
       });
