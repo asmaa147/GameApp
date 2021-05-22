@@ -1,20 +1,50 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+
+    <div class="row HeaderSection">
+      <Header />
     </div>
+
+    <div class="row CategorySection">
+      <SliderCategory />
+    </div>
+
+
     <router-view />
   </div>
 </template>
 
+<script>
+import Header from "./components/Header.vue";
+import SliderCategory from "./components/SliderCategory.vue";
+
+
+export default {
+  name: "Home",
+  components: {
+    Header,
+    SliderCategory,
+  },
+};
+</script>
+
 <style>
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  background-color: #f5f5f5;
+
+}
+
+.HeaderSection,
+.CategorySection {
+  background-color: #fff;
 }
 
 #nav {
