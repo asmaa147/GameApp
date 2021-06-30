@@ -4,7 +4,7 @@ ____________________
 
 online Game store is Vue.js App. 
 It's about Home page and Detail page about object that has been selected and Login page
-
+It's related to Game's API
 
 
 ## Project setup
